@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <header>
+        <div class="text-xs bg-red-500 text-white text-center lg:tracking-widest lg:text-xl py-2">
+            <h1>
+                100 TL VE ÜZERİ ALIŞVERİŞLERİNİZDE KARGO ÜCRETSİZ
+            </h1>
+        </div>
+        <div class="border-b">
+            <div class="container mx-auto px-5">
+                <div class="flex items-center flex-wrap -mx-5 py-2 lg:py-0">
+                    <div class="px-5">
+                        <button class="bg-red-500 text-white  rounded text-sm px-5 py-1">Duyurular</button>
+                    </div>
+                    <div class="px-5 flex-1  lg:w-auto">
+                        <p class="text-xs lg:text-sm">PES TURNUVASI BAŞLIYOR İLK EL...</p>
+                    </div>
+                    <div class="px-5 hidden lg:block flex-1">
+                        <nav>
+                            <ul class="flex flex-wrap items-center justify-end -mx-3">
+                                <li>
+                                    <a href="#" class="transition duration-500 ease-in-out hover:text-red-500 block border-l border-r text-xs p-3">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                        <span>Blog</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="transition duration-500 ease-in-out hover:text-red-500 block border-r text-xs p-3">
+                                        <i class="fa-solid fa-comment"></i>
+                                        <span>Destek</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="transition duration-500 ease-in-out hover:text-red-500 block border-r text-xs p-3">
+                                        <i class="fa-solid fa-truck-fast"></i>
+                                        <span>Kargo Takibi</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="transition duration-500 ease-in-out hover:text-red-500 block border-r text-xs p-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>Favorilerim</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="transition duration-500 ease-in-out hover:text-red-500 block border-r text-xs p-3">
+                                        <i class="fa-solid fa-lock"></i>
+                                        <span>Üye Girişi</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="transition duration-500 ease-in-out hover:text-red-500 block border-r text-xs p-3">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                        <span>Üye Ol</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-5">
+            <div class="fixed bottom-0 left-0 w-full bg-white lg:static" mobile-menu>
+                <div class="py-2 h-full flex flex-wrap justify-around items-center lg:justify-start lg:-mx-5">
+                    <div class="lg:px-5 lg:hidden">
+                        <button class="text-2xl" menu-button>
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="lg:px-5">
+                        <a href="/index.html" class="block w-12 lg:w-auto">
+                            <img src="https://www.aralgame.com/catalog/view/theme/aral_theme/assets/images/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="lg:px-5 lg:hidden">
+                        <button class="text-2xl" search-button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="lg:px-5 lg:flex-1">
+                        <div class="flex justify-between lg:justify-end lg:-mx-5">
+                            <div class="hidden lg:block lg:px-5" search>
+                                <div class="px-5 fixed top-0 left-0 z-10 bg-white w-full h-full flex justify-center flex-col lg:px-0 lg:static lg:block lg:w-96">
+                                    <div class="lg:hidden absolute top-12 right-12" search-close>
+                                        <button class="text-4xl"><i class="fa-solid fa-xmark"></i></button>
+                                    </div>
+                                    <div class="border flex items-center px-3 py-2">
+                                        <div class="flex-1">
+                                            <input type="text" placeholder="Outlet Fırsatları" class="focus:outline-none w-full">
+                                        </div>
+                                        <div>
+                                            <button class="text-red-500"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="lg:px-5">
+                                <button class="transition duration-500 ease-in-out h-full lg:py-2 lg:px-5 flex items-center text-2xl lg:hover:bg-red-600 lg:text-sm lg:text-white lg:bg-red-500 lg:rounded">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="ml-2 hidden lg:block">Sepetim (0)</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="fixed top-0 w-full -left-full bg-white h-full z-10 lg:static lg:bg-gray-600" menu>
+            <div class="lg:hidden absolute top-12 right-12" mobile-menu-close>
+                <button class="text-4xl"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="container mx-auto h-full lg:h-auto px-5">
+                <ul class="text-center h-full flex flex-col justify-center lg:text-left lg:justify-start lg:flex-row lg:flex-wrap lg:items-center">
+                    <li>
+                        <a href="#" class="py-3 block text-2xl lg:text-lg lg:text-white lg:bg-gray-400 lg:px-5">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="lg:hidden">ANASAYFA</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="py-3 block hover:bg-gray-800 transition duration-500 ease-in-out text-2xl lg:text-lg lg:text-white lg:px-5">
+                            PLAYSTATION 5
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="py-3 block hover:bg-gray-800 transition duration-500 ease-in-out text-2xl lg:text-lg lg:text-white lg:px-5">
+                            PLAYSTATION 4
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="py-3 block hover:bg-gray-800 transition duration-500 ease-in-out text-2xl lg:text-lg lg:text-white lg:px-5">
+                            XBOX ONE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="py-3 block hover:bg-gray-800 transition duration-500 ease-in-out text-2xl lg:text-lg lg:text-white lg:px-5">
+                            PC
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="py-3 block hover:bg-gray-800 transition duration-500 ease-in-out text-2xl lg:text-lg lg:text-white lg:px-5">
+                            COLLECTORS EDITION
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="">
+        <div class="container mx-auto grid lg:grid-cols-8 flex">
+            <div class="new col-span-2">
+                <div class="leaching  flex justify-around justify-center space-x-10 pt-5">
+                    <div class="sm/:w-full">
+
+                        <div class="border-b-4 border-red-600 flex mb-5">
+                            <div class="tittle-section bg-red-600 text-2xl text-white  pl-2 ">
+                                <h2 class="">EN YENİLER</h2>
+                            </div>
+                        </div>
+                        <div class="">
+                            <img src="img/starlink-250x250.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main col-span-6 mt-5">
+                <div class="product   justify-center ">
+                    <div class="">
+                        <img class="w-full" src="img/ps4-870x100 (1).png" alt="">
+                    </div>
+                    <div class="text-white bg-gray-700 py-3 font-bold text-lg px-2 mt-3 flex justify-between">
+                        <h1>PS4 OYUNLARI</h1>
+                        <div class="select flex space-x-2 mb-3">
+                            <p class="text-gray-200 font-thin">Sırala:</p>
+                            <select name="product" class="">
+                                <option value="price">Varsayılan</option>
+                                <option value="price">Ucuzdan Pahalıya</option>
+                                <option value="price">Pahalıdan Ucuza</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <p class="text-gray-500 mb-5">Gösterilen: 1 ile 21 arası, toplam: 21 (1 Sayfa)
+                    </p>
+                    <div class="row flex  mt-9 grid lg:grid-cols-4">
+
+                        <div class=" border-2 border-gray-100 py-1 hover:shadow-xl">
+                            <a href="">
+                                <img src="img/xbox1.jpg" alt="" class="max-w-full block mx-auto">
+                                <h2 class="text-center items-center">XBOX ONE APEX<br> LEGENDS LIFELINE</h2>
+                                <div class="flex justify-center">
+
+                                    <div class="price text-center">
+                                        <h3 class="line-through">150.00 TL</h3>
+                                        <h1 class="text-red-700 text-2xl font-bold">135.00 TL</h1>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+
+                        <div class="border-2 border-gray-100 py-1 hover:shadow-xl">
+                            <a href="">
+                                <img src="img/xbox2.jpg" alt="" class="max-w-full block mx-auto">
+                                <h2 class="text-center">XBOX ONE APEX<br> LEGENDS<br>BLOODHOUND</h2>
+                                <div class="flex justify-center  py-3 ">
+
+                                    <div class="price text-center">
+                                        <h3 class="line-through">150.00 TL</h3>
+                                        <h1 class="text-red-700 text-2xl font-bold">70.00 TL</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+                        <div class=" border-2 border-gray-100 py-1 hover:shadow-xl">
+                            <a href="">
+                                <img src="img/xbox3.jpg" alt="" class="max-w-full block mx-auto">
+                                <h2 class="text-center">XBOX ONE TOM<br> CLANCY'S GHOST<br> RECON B..</h2>
+                                <div class="flex justify-center items-center py-3 ">
+
+                                    <div class="price text-center">
+                                        <h3 class="line-through">150.00 TL</h3>
+                                        <h1 class="text-red-700 text-2xl font-bold">70.00 TL</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        </a>
+                        <div class=" border-2 border-gray-100 py-1 hover:shadow-xl">
+                            </a>
+                            <img src="img/xbox4.jpg" alt="" class="max-w-full block mx-auto">
+                            <h2 class="text-center">PS4 APEX LEGENDS<br> LIFELINE</h2>
+                            <div class="flex justify-center items-center py-3 ">
+
+                                <div class="price text-center">
+                                    <h3 class="line-through">150.00 TL</h3>
+                                    <h1 class="text-red-700 text-2xl font-bold">70.00 TL</h1>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="row flex  mt-9 grid lg:grid-cols-4">
+
+
+                        <div class=" border-2 border-gray-100 py-1 hover:shadow-xl">
+                            <a href="">
+                                <img src="img/xbox5.jpg" alt="" class="max-w-full block mx-auto">
+                                <h2 class="text-center">XBOX ONE PES 2020</h2>
+                                <div class="flex justify-center items-center py-3 ">
+
+                                    <div class="price text-center">
+                                        <h3 class="line-through">150.00 TL</h3>
+                                        <h1 class="text-red-700 text-2xl font-bold">70.00 TL</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+                        <div class=" border-2 border-gray-100 py-1 hover:shadow-xl">
+                            <a href="">
+                                <img src="img/xbox6.jpg" alt="" class="max-w-full block mx-auto">
+                                <h2 class="text-center">XBOX ONE SUPER<br> BOMBERMAN<br> R SHINY ED..</h2>
+                                <div class="flex justify-center items-center py-3 ">
+
+                                    <div class="price text-center">
+                                        <h3 class="line-through">150.00 TL</h3>
+                                        <h1 class="text-red-700 text-2xl font-bold">70.00 TL</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+                        <div class=" border-2 border-gray-100 py-1 hover:shadow-xl">
+                            <a href="">
+                                <img src="img/xbox7.jpg" alt="" class="max-w-full block mx-auto">
+                                <h2 class="text-center">XBOX ONE FIFA <br> ULTIMATE<br> EDITION</h2>
+                                <div class="flex justify-center items-center py-3 ">
+
+                                    <div class="price text-center">
+                                        <h3 class="line-through">150.00 TL</h3>
+                                        <h1 class="text-red-700 text-2xl font-bold">70.00 TL</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class=" border-2 border-gray-100 py-1 hover:shadow-xl">
+
+                            <a href="">
+                                <img src="img/xbox8.jpg" alt="" class="max-w-full block mx-auto">
+                                <h2 class="text-center">XBOX ONE ASSASSINS<br> CREED III REMAST..</h2>
+                                <div class="flex justify-center items-center py-3 ">
+
+                                    <div class="price text-center">
+                                        <h3 class="line-through">150.00 TL</h3>
+                                        <h1 class="text-red-700 text-2xl font-bold">70.00 TL</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="row flex  mt-9 grid lg:grid-cols-4">
+
+
+                        <div class=" border-2 border-gray-100 py-1 hover:shadow-xl">
+
+                            <a href="">
+                                <img src="img/xbox9.jpg" alt="" class="max-w-full block mx-auto">
+                                <h2 class="text-center">PS4 APEX LEGENDS<br> LIFELINE</h2>
+                                <div class="flex justify-center items-center py-3 ">
+
+                                    <div class="price text-center">
+                                        <h3 class="line-through">150.00 TL</h3>
+                                        <h1 class="text-red-700 text-2xl font-bold">70.00 TL</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        </a>
+
+                        <div class=" border-2 border-gray-100 py-1 hover:shadow-xl">
+
+                            <a href="">
+                                <img src="img/xbox10.jpg" alt="" class="max-w-full block mx-auto">
+                                <h2 class="text-center">XBOX ONE SPYRO<br> REIGNITED TRILOGY</h2>
+                                <div class="flex justify-center items-center py-3 ">
+
+                                    <div class="price text-center">
+                                        <h3 class="line-through">150.00 TL</h3>
+                                        <h1 class="text-red-700 text-2xl font-bold">70.00 TL</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        </a>
+
+                        <div class=" border-2 border-gray-100 py-1 hover:shadow-xl">
+
+                            <a href="">
+                                <img src="img/xbox11.jpg" alt="" class="max-w-full block mx-auto">
+                                <h2 class="text-center">XBOX ONE CALL OF<br> DUTY BLACK OPS 4</h2>
+                                <div class="flex justify-center items-center py-3 ">
+
+                                    <div class="price text-center">
+                                        <h3 class="line-through">150.00 TL</h3>
+                                        <h1 class="text-red-700 text-2xl font-bold">70.00 TL</h1>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+
+
+                        <div class=" border-2 border-gray-100 py-1 hover:shadow-xl">
+
+                            <a href="">
+                                <img src="img/xbox12.jpg" alt="" class="max-w-full block mx-auto">
+                                <h2 class="text-center">XBOX ONE DESTINY 2<br> FORSAKEN LEGENDA..</h2>
+                                <div class="flex justify-center items-center py-3 ">
+
+                                    <div class="price text-center">
+                                        <h3 class="line-through">150.00 TL</h3>
+                                        <h1 class="text-red-700 text-2xl font-bold">70.00 TL</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" bg-gray-700 font-sans text-white text-center text-l">
+            
+        <div class="container mx-auto grid lg:grid-cols-5 lg:space-x-40 ">
+            <div class="lg:flex  text-white py-5 bg-gray-800 lg:col-span-1 p-0 ">
+               <ul class="flex space-x-7 text-2xl  p-2 ">
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube-square"></i></a></li>
+                        <li><a href=""><i class="fas fa-mail-bulk"></i></a></li>
+                    </ul>
+            </div>  
+           
+            <div class="lg:flex items-center space-x-12 col-span-4 ">
+                <div>
+                    <p class="text-2xl"><i class="fas fa-envelope-square"> </i>Bizden haberdar olmak için e-bültenimize kayıt olun!</p>
+                </div>
+                    
+              
+                
+                <div class="lg:flex block">
+                    <input class="p-3" type="text" name="" id="" placeholder="e posta adresiniz...">
+                    <button class="bg-red-600 px-4">KAYDET</button>
+                </div>
+            </div>
+           
+            
+        </div>
+      
+    </div>
+        
+</section>
+<footer class="bg-gray-200">
+    <div class="container mx-auto py-3">
+        <div class="flex flex-wrap text-xl grid lg:grid-cols-6 mt-5">
+            <div class="">
+                <h2 class="font-bold">Aral Game</h2>
+                <ul>
+                    <li><a href="">PS4</a></li>
+                    <li><a href="">PC</a></li>
+                    <li><a href="">Skylanders</a></li>
+                    <li><a href="">Outlet</a></li>
+                </ul>
+            </div>
+                
+          
+            <div class="" >
+
+                <ul>
+                    <li><a href="">XBOX 360</a></li>
+                    <li><a href="">PSP</a></li>
+                    <li><a href="">Disney Infınıty</a></li>
+                    
+                </ul>
+            </div>
+            <div class="">
+                <ul >
+                    <li><a href="">PS3</a></li>
+                    <li><a href="">Aksesuar</a></li>
+                    <li><a href=""></a>Razer</li>
+                  
+                </ul>
+            </div>
+          
+            <div class="">
+                <h2 class="font-bold">Kurumsal</h2>
+                <ul >
+                    <li><a href="">Hakkımızda</a></li>
+                    <li><a href="">Duyurular</a></li>
+                    <li><a href=""></a>Kurumsal Satış</li>
+                    <li><a href="">İnsan Kaynakları</a></li>
+                    <li><a href="">İletişim</a></li>
+                    <li><a href=""></a>Blog</li>
+                  
+                </ul>
+            </div>
+            <div class="">
+                <h2 class="font-bold">Destek</h2>
+                <ul >
+                    <li><a href="">E-Ticaret</a></li>
+                    <li><a href="">Banka Bilgileri</a></li>
+                    <li><a href=""></a>Alışveriş Kılavuzu</li>
+                    <li><a href=""></a>Destek</li>
+                  
+                </ul>
+            </div>
+            <div class="">
+                <ul >
+                    <li><a href="">S.S.S.</a></li>
+                    <li><a href="">Ürün İade Şartları</a></li>
+                    <li><a href=""></a>Kargo Takip</li>
+                  
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</body>
+
+</html>
